@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Validation</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/262e6fbef8.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+        
+
+</head>
+
+<style>
+   
+</style>
+
+<body>
+
+    <h1 style="text-align: center " > Form Validation <span><i class="fa-brands fa-wpforms"></i></span></h1>
+    <div class="container">
+
+
+
+
+        <div class="form-group">
+            <label > Username:</label><br>
+            <input type="text" id="username" class="form-control rounded border border-primary">
+            <span id="userError" class="text-danger font-weight-bold"></span>
+        </div>
+        <div class=" form-group">
+            <label> Password:</label><br>
+            <input type="text" id="password" class="form-control">
+            <span id="passError" class="text-danger font-weight-bold"></span>
+        </div>
+        <div class="form-group">
+            <label> Email:</label><br>
+            <input type="text" id="email" class="form-control">
+            <span id="emailError" class="text-danger font-weight-bold"></span>
+        </div>
+        <div class="form-Group">
+            <label> Mobile.no:</label><br>
+            <input type="text" id="mobile" class="form-control">
+            <span id="mobileError" class="text-danger font-weight-bold"></span>
+        </div>
+        <br>
+
+
+        <input id="btn" style="width: 100px"  class="btn btn-warning" type="button" value="Submit" onclick="validation()" name="" class="btn-btn-primary"><br><br>
+
+        <h2 >select food <span><i class="fa-solid fa-pot-food"></i></span> item you want to eat</h2>
+  <br>
+
+  <label><input type="checkbox" class="check" /> Maagi:</label>
+  <label><input type="checkbox" class="check" /> pasta:</label>
+  <label><input type="checkbox" class="check" /> samosa :</label>
+  <label><input type="checkbox" class="check" /> burger:</label>
+  <label><input type="checkbox" class="check" /> pizza:</label>
+  <label><input type="checkbox" class="check" /> sandwich:</label>
+
+        <br>
+        <br>
+        <span id="validation" style="color:red"></span> 
+
+
+
+
+        
+        <br>
+        <br>
+
+
+        <h2 >Gender</h2>
+
+
+       Male👨‍🦰:<input type="radio" name="gender" id="male" onclick="radio()"  >
+       Female👩‍🦰: <input type="radio" name="gender" id="female" onclick="radio()" >
+       <br>
+
+
+       <div id="popup">
+       <div id="pop-content">
+
+
+        <h2 style="font-size: 25px">Are you above 18 ?</h2>
+<input class="btn" type="button" value="yes">
+<input class="btn" type="button" value="no">
+<br>
+<h2 style="font-size: 25px">Are you married?</h2>
+<input class="btn" type="button" value="yes">
+<input class="btn" type="button" value="no">
+
+<span id="cancel"><i class="fa-solid fa-xmark"></i></span>
+<br>
+<br>
+<br>
+<input type="button" value="submit" id="submit" >
+
+
+
+       </div>
+    </div>
+
+       <br>
+       <br>
+       <br>
+       <br>
+        
+
+    </div>
+
+ 
+
+
+        
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
